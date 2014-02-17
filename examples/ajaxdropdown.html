@@ -49,7 +49,7 @@
 						select_location.load(function(callback) {
 							xhr && xhr.abort();
 							xhr = $.ajax({
-								url: 'http://dev.tastykhana.in:82/admin/general/cityarea/zones_json/' + value,
+								url: '/location.php?cityid=' + value,
 								datatype:"json",
 								success: function(results) {
 									select_location.enable();
